@@ -3,9 +3,9 @@ body {
 }
 h1 {
   color: black;
-  font-family: decorative;
+  font-family:'decorative';
 }
 p {
   color: blue;
-  font-family: calibri;
+  font-family: 'calibri';
 }
