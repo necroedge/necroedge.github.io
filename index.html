@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial;}
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<title>Muhammad Rheza Aji Paramarta</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {font-family: Arial;}
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px hidden #ccc;
-  background-color: #f1f1f1;
-}
+		/* Style the tab */
+		.tab {
+  		overflow: hidden;
+  		border: 1px hidden #ccc;
+  		background-color: #f1f1f1;
+		}
+	
+		/* Style the buttons inside the tab */
+		.tab button {
+  		background-color: inherit;
+  		float: left;
+  		border: none;
+  		outline: none;
+  		cursor: pointer;
+  		padding: 14px 16px;
+  		transition: 0.3s;
+  		font-size: 17px;
+		}
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+		  background-color: #ddd;
+		}
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
+		/* Create an active/current tablink class */
+		.tab button.active {
+  		background-color: #ccc;
+		}
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-</style>
+		/* Style the tab content */
+		.tabcontent {
+  		display: none;
+  		padding: 6px 12px;
+  		border: 1px solid #ccc;
+  		border-top: none;
+	}
+	</style>
 </head>
 <body>
 
@@ -49,24 +51,31 @@ body {font-family: Arial;}
 <p>Click on the buttons inside the tabbed menu:</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'Introduction')">Introduction</button>
+  <button class="tablinks" onclick="openCity(event, 'CV')">CV</button>
+  <button class="tablinks" onclick="openCity(event, 'Portfolio')">Portfolio</button>
 </div>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<div id="Introduction" class="tabcontent">
+ 	<h1>Muhammad Rheza Aji Paramarta</h1>
+  	<h2>Software Engineer</h2>
+	<p>Please explore my world with careful steps.</p>
+	<h1>Links</h1>
+   	<ul>
+		<li><a href="https://www.linkedin.com/in/rhezaaji/" target="_blank">LinkedIn</a></li>
+    	<li><a href="mailto:rhezaaji@gmail.com">E-Mail</a></li>
+   		<li><a href="https://github.com/necroedge" target="_blank">GitHub</a></li>
+	</ul>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+<div id="CV" class="tabcontent">
+  <!-- <h3>Paris</h3> -->
+  <p>Sorry, nothing inside here. Please wait for the construction finish!</p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+<div id="Portfolio" class="tabcontent">
+  <!-- <h3>Tokyo</h3> -->
+  <p>Sorry, nothing inside here. Please wait for the construction finish!</p>
 </div>
 
 <script>
